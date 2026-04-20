@@ -1,6 +1,6 @@
 # Building a Browser Automation Tool That Actually Works Against Modern Anti-Bot Portals
 
-Recenlty my analyst team at work requested for a desktop application that could automate batch downloading from a web portal without any captcha solvers, they also wanted to have control over through out the process — the kind of tool that sounds trivial until you hit every layer of modern browser security at once. The final architecture is clean and works reliably, but the path there involved deliberately ruling out several popular approaches before writing the first meaningful line of code.
+Recently my analyst team at work requested for a desktop application that could automate batch downloading from a web portal without any captcha solvers, they also wanted to have control over through out the process — the kind of tool that sounds trivial until you hit every layer of modern browser security at once. The final architecture is clean and works reliably, but the path there involved deliberately ruling out several popular approaches before writing the first meaningful line of code.
 
 This post is about that process: what are the problems that makes simple download a challenge, how I analyzed the problem, why I chose Chrome DevTools Protocol over the obvious alternatives, the specific gotchas I encountered in the Python/WebView layer, and what the working solution looks like.
 
